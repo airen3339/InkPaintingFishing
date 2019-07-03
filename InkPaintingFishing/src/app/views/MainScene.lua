@@ -27,6 +27,7 @@ local CurrentLevel = 1				--当前关卡等级
 local pScheduler = cc.Director:getInstance():getScheduler()
 
 local csbFilePath = 'res/InkPaintingFishingMainLayer.csb'
+
 function MainScene:onCreate()
 	self._csbNode = cc.CSLoader:createNode(csbFilePath)
 	self._csbNode:addTo(self)
@@ -36,7 +37,7 @@ function MainScene:onCreate()
 	self:initHelpPanel()
 	self:initGamePanel()
 	self:initGameOverPanel()
-	
+	AudioEngine.playMusic('res/audio/bg.mp3',true)
 
 end
 function MainScene:initMainPanel()
@@ -214,6 +215,7 @@ function MainScene:catchFIsh(fish)
 
     self._haveFish = fish
     self.stringDirection = -1
+	AudioEngine.playEffect('res/audio/gou.mp3')
 
 	-- self.isDownGou = false
 end
@@ -235,6 +237,7 @@ function MainScene:gamePlayerTouch(event)
 				self.stringRun = true
 				self.stringDirection = 1
 				self.isDownGou = false
+				AudioEngine.playEffect('res/audio/gou.mp3')
 			end
 		end
 	end
@@ -264,11 +267,14 @@ function MainScene:updateString(dt)
 	self._playerString:setContentSize(sizeString)
 	if sizeString.height >= configGame.stringMax then
 		self.stringDirection = -1
+		AudioEngine.playEffect('res/audio/gou.mp3')
+
 	elseif sizeString.height <= configGame.stringMin then
 		self.stringDirection = 0
 		self.stringRun = false
 		self.isDownGou = true
 		self:checkFish()
+
 	end
 
 end
