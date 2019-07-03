@@ -1,0 +1,102 @@
+{
+"skeleton": { "hash": "bx/5AQS4jRuWUwPpjKF+6Gv2I6c", "spine": "3.6.39", "width": 216, "height": 33, "images": "" },
+"bones": [
+	{ "name": "root" },
+	{ "name": "fishing_wave00", "parent": "root" },
+	{ "name": "fishing_wave0", "parent": "root" },
+	{ "name": "fishing_wave1", "parent": "root" }
+],
+"slots": [
+	{ "name": "fishing_wave00", "bone": "fishing_wave00", "color": "ffffffb4", "attachment": "fishing_wave00" },
+	{ "name": "fishing_wave0", "bone": "fishing_wave0", "color": "ffffffb4", "attachment": "fishing_wave00" },
+	{ "name": "fishing_wave1", "bone": "fishing_wave1", "color": "ffffffb4", "attachment": "fishing_wave00" }
+],
+"skins": {
+	"default": {
+		"fishing_wave0": {
+			"fishing_wave00": { "x": 0.92, "y": -5.08, "width": 216, "height": 33 }
+		},
+		"fishing_wave00": {
+			"fishing_wave00": { "x": 0.92, "y": -5.08, "width": 216, "height": 33 }
+		},
+		"fishing_wave1": {
+			"fishing_wave00": { "x": 0.92, "y": -5.08, "width": 216, "height": 33 }
+		}
+	}
+},
+"animations": {
+	"animation": {
+		"slots": {
+			"fishing_wave00": {
+				"color": [
+					{ "time": 3.6, "color": "ffffffb4" },
+					{ "time": 5.3333, "color": "ffffff00" }
+				]
+			},
+			"fishing_wave0": {
+				"color": [
+					{ "time": 1.7667, "color": "ffffffb4" },
+					{ "time": 3.5, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 3.5333, "color": "ffffffb4" }
+				]
+			},
+			"fishing_wave1": {
+				"color": [
+					{ "time": 0, "color": "ffffffb4" },
+					{ "time": 1.7333, "color": "ffffff00", "curve": "stepped" },
+					{ "time": 1.7667, "color": "ffffffb4" }
+				]
+			}
+		},
+		"bones": {
+			"fishing_wave00": {
+				"scale": [
+					{
+						"time": 0,
+						"x": 0.5,
+						"y": 0.5,
+						"curve": [ 0.19, 0.33, 0.675, 0.94 ]
+					},
+					{ "time": 5.3333, "x": 2, "y": 2 }
+				]
+			},
+			"fishing_wave0": {
+				"scale": [
+					{
+						"time": 0,
+						"x": 1.219,
+						"y": 1.219,
+						"curve": [ 0.309, 0.47, 0.703, 0.94 ]
+					},
+					{ "time": 3.5, "x": 2, "y": 2, "curve": "stepped" },
+					{
+						"time": 3.5333,
+						"x": 0.5,
+						"y": 0.5,
+						"curve": [ 0.233, 0.28, 0.587, 0.64 ]
+					},
+					{ "time": 5.3333, "x": 1.204, "y": 1.204 }
+				]
+			},
+			"fishing_wave1": {
+				"scale": [
+					{
+						"time": 0,
+						"x": 1.73,
+						"y": 1.73,
+						"curve": [ 0.352, 0.53, 0.7, 0.91 ]
+					},
+					{ "time": 1.7333, "x": 2, "y": 2, "curve": "stepped" },
+					{
+						"time": 1.7667,
+						"x": 0.5,
+						"y": 0.5,
+						"curve": [ 0.198, 0.28, 0.602, 0.72 ]
+					},
+					{ "time": 5.3333, "x": 1.719, "y": 1.719 }
+				]
+			}
+		}
+	}
+}
+}

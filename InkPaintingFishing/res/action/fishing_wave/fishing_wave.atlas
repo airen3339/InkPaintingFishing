@@ -1,0 +1,13 @@
+
+fishing_wave.png
+size: 256,64
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+fishing_wave00
+  rotate: false
+  xy: 0, 0
+  size: 216, 33
+  orig: 216, 33
+  offset: 0, 0
+  index: -1

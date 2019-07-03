@@ -1,0 +1,42 @@
+<Solution>
+  <PropertyGroup Name="InkPaintingFishing_widget" Version="3.10.0.0" Type="CocosStudio" />
+  <SolutionFolder>
+    <Group ctype="ResourceGroup">
+      <RootFolder Name=".">
+        <Folder Name="image">
+          <Folder Name="game">
+            <Image Name="beijing.png" />
+            <Image Name="dayu1.png" />
+            <Image Name="dayu2.png" />
+            <Image Name="dayu3.png" />
+            <Image Name="dayu4.png" />
+            <Image Name="fanhui.png" />
+            <Image Name="fenshu.png" />
+            <Image Name="jixu.png" />
+            <Image Name="number.png" />
+            <Image Name="UIdiaogou.png" />
+            <Image Name="xiaochuan.png" />
+            <Image Name="xiaoyu1.png" />
+            <Image Name="xiaoyu2.png" />
+            <Image Name="xiaoyu3.png" />
+            <Image Name="xiaoyu4.png" />
+            <Image Name="xiaoyu5.png" />
+            <Image Name="xiaoyu6.png" />
+            <Image Name="youxijieshu.png" />
+            <Image Name="yugou.png" />
+            <Image Name="yuxian.png" />
+          </Folder>
+          <Image Name="bangzhu.png" />
+          <Image Name="bg.png" />
+          <Image Name="denglumoji.png" />
+          <Image Name="guanbi.png" />
+          <Image Name="kaishi.png" />
+          <Image Name="logo.png" />
+          <Image Name="wenzi.png" />
+          <Image Name="youxibangzhumianban.png" />
+        </Folder>
+        <Project Name="InkPaintingFishingMainLayer.csd" Type="Layer" />
+      </RootFolder>
+    </Group>
+  </SolutionFolder>
+</Solution>
